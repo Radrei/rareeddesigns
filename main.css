@@ -1,6 +1,6 @@
 /* Colors
 *
-* Purple #870cf2
+* Purple #6c0ac1
 * Pink #f40cec
 * Red #f41b0b
 * Orange #f47f0d
@@ -59,11 +59,20 @@ h4,
 	font-size: 1.5em;
 }
 
+img{
+	height: auto;
+	object-fit: cover;
+	width: 100%;
+}
+
 .wrapper{
 	margin: 0 auto;
 	max-width: 1250px;
 	padding: 0 1em;
 	width: 100%;
+}
+.wrapper-small{
+	max-width: 900px;
 }
 .hidden{
 	position: absolute;
@@ -76,14 +85,30 @@ h4,
 .center{
 	text-align: center;
 }
+.text-right{
+	text-align: right;
+}
 .transform-none{
 	text-transform: none;
+}
+.block{
+	display: block;
 }
 .button{
   display: inline-block;
   font-weight: 700;
+  margin: 10px;
   padding: 1em;
   text-transform: uppercase;
+  text-decoration: none;
+}
+.button-purple{
+	color: white;
+	background-color: #6c0ac1; /* Purple */
+}
+.button-blue{
+	color: white;
+	background: skyblue;
 }
 section{
 	padding: 30px 0;
@@ -125,6 +150,9 @@ p{
 .portfolio-item{
 	margin-bottom: 1em;
 }
+a.portfolio-item{
+	color: #333;
+}
 .portfolio-item--heading{
 	margin-top: 10px;
 }
@@ -140,4 +168,12 @@ p{
 	margin-top: 100px;
 	padding: 1em;
 	text-align: center;
+}
+
+.piece-intro--image{
+	max-width: 500px;
+	width: 100%;
+}
+.piece-photos--image {
+    margin-bottom: 1em;
 }
